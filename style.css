@@ -1,0 +1,102 @@
+body{
+    background-color: beige;
+}
+#div1{
+    position: absolute;
+    height: 450px;
+    width:100%;
+    transform:translateX(-8px)
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar ul{
+    list-style-type: none;
+    transform:translateY(-100px);
+}
+
+.navbar a{
+    text-decoration: underline;
+    color:black;
+    float:right;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    font-family: Arial;
+    color: blueviolet;
+    background-color: black;
+}
+
+
+@keyframes move{
+    from{
+        transform:translate(-300px,100px);
+    }
+    to{
+        transform: translate(0px,100px);
+    }
+}
+
+
+
+#anim1{
+    animation-duration: 4s;
+    animation-delay:1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    position: absolute;
+    transform: translate(40px,100px);
+
+}
+
+#imganim{
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+    position: absolute;
+    
+}
+
+#f1{
+    transform:translateY(1750px)
+}
+
+
+#educont{
+    transform: translateY(-140px);
+    color:beige;
+    padding:20px;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes appear1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes imground{
+    from{
+        opacity: 0;
+        border-radius: 0%;
+    }
+    to{
+        opacity:1;
+        border-radius:50%;
+    }
+}
+
